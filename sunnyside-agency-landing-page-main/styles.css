@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Inter:wght@300&family=Lexend+Deca&family=Red+Hat+Display:wght@500;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow' sans-serif;
+}
+.banner{
+    background-color: red;
+    height: 80vh;
+    min-height: 600px;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav{
+    display: flex;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    align-items: center;
+}
+
+.nav span{
+    margin-right: 30px;
+}
+
+.contact{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(212, 27%, 19%);
+    padding: 6px 14px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.contact:hover{
+    background-color:hsl(214, 39%, 83%);
+    opacity: 0.4;
+    color: hsl(0, 0%, 100%);
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'fraunces' sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    flex-grow: 1;
+    margin-bottom: 60px;
+    font-weight: bold;
+
+}
+.main .para{
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 100%);
+}
+
+.content1-flex{
+    display: flex;
+    
+}
+
+.content1_cont{
+    padding: 0, 10vw;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-self: center;
+    flex: 0 0 50%;
+    width: 50%;
+
+
+}
+.content1_image{
+    width: 50%;
+
+}
+.image_photo{
+    width: 100%
+}
+.content1 .content1_cont .paragraph{
+    margin: 2rem 0 2rem 0;
+}
+
+.content_image .image_photo{
+    width: 50%;
+    display: block;  
+}
+.heading{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'fraunces' sans-serif;
+    line-height: 1;
+    color: hsl(212, 27%, 19%);
+}
+.paragraph{
+    font-size: 1.3rem;
+    color: hsl(212, 27%, 19%);
+}
+.btn{
+    text-transform: uppercase;
+    font-family: 'fraunces' sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 0;
+    cursor: pointer;
+}
+.btn_black--1{
+  border-bottom: 3px solid hsl(51, 100%, 59%);  
+}
+.btn_black--2{
+    border-bottom: 3px solid hsl(0, 74%, 36%);
+    align-self:flex-end;
+}
+
+.content2_flex{
+    display: flex;
+    width: 100%;
+
+}
+.content2_image{
+    flex: 0 0 50%;
+    width: 50%;
+
+}
+.content2_image_photo{
+    flex: 0 0 50%;
+    width: 100%;
+}
+.content2 .paragraph {
+   flex: 0 0 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0 10vw;
+} 
+.content2_cont{
+    margin: 2rem 0;
+    max-width: 50%;
+
+
+}
+.content2_cont .heading{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 20px;
+
+}
+
+
+.content3_flex{
+    display: flex;
+    width: 100%;
+
+}
+.content3_image{
+   flex: 0 0 50%;
+
+}
+.content3_image_photo--1 {
+   width: 100%;
+   display:block ;
+   height: 500px;
+   
+} 
+.content3_image_photo--2{
+    width: 100%;
+    display: block;
+    height: 500px;
+}
+.heading-tertiary{
+   text-align: center;
+   font-size: 3rem;
+   font-family: 'fraunces' sans-serif;
+   font-weight: 900;
+}
+.graphicText{
+     text-align: center;
+     font-size: 18px;
+     color: hsl(167, 40%, 24%);
+     padding: 50px;
+}
+.photographyText{
+    align-items: flex-end;
+    font-size: 18px;
+    color: hsl(198, 62%, 26%);
+    padding: 50px ;
+}
+.graphic-textbox{
+    margin-top: -12rem;
+    
+}
+.photography-textbox{
+    margin-top: -12rem;
+
+}
+
+
+.section-testimonials{
+    margin: 10rem 0;
+    height: 600vh;
+}
+
+.testimonials_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: .1rem;
+}
+.testimonials_client--1, .testimonials_client--2, .testimonials_client--3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonials_client--1-photo, .testimonials_client--2-photo, .testimonials_client--3-photo{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+.testimonials_client--1-text, .testimonials_client--2-text, .testimonials_client--3-text{
+    font-size: 18px;
+    color: hsl(212, 27%, 19%);
+    margin-bottom: 4rem;
+}
+.heading-4{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'fraunces' sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+    color: hsl(232, 10%, 55%);
+}
+.emily{
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'fraunces' sans-serif;
+    color: hsl(212, 27%, 19%);
+    margin-bottom: o.2rem;
+}
+.occupation{
+    font-size: 1.1rem;
+    color: hsl(212, 27%, 19%);
+}
+.gallery{
+    max-width: 100%;
+    margin-top: 30px;
+}
+.gallery_images{
+    display: flex;
+    width: 100%
+
+}
+.gallery_images--1, .gallery_images--2, .gallery_images--3, .gallery_images--4{
+      width: 25%;
+      display: block;   
+}
+.footer{
+  height: 40vh;
+  background-color: hsl(168, 34%, 41%);
+  
+}
+.footer_flex{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.heading5{
+    margin-top: 15px;
+    font-size: 3rem;
+    color: hsl(212, 27%, 19%);
+    font-family: 'fraunces' sans-serif;
+}
+.footer_list{
+    list-style: none;
+    display: flex;
+}
+.footer_item{
+     margin-bottom: 5rem;
+     margin-top: 30px;
+}
+.footer_item > *:not(last-child){
+    margin-right: 3rem;
+}
+.footer_link{
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    font-size: 1.5rem;
+    
+    
+}
+.footer_socail {
+    display: flex;
+    margin: 5px;
+}
+.footer_socail .ima{
+    margin-right: 5rem;
+    color: hsl(212, 27%, 19%);
+    font-size: 3rem;
+}
+
+@media screen and  (max-width:425px){
+    .content1{
+        flex-direction: column;
+    }
+}
